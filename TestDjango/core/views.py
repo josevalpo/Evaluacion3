@@ -32,3 +32,12 @@ def registro(request):
 
 def productos(request):
     return render(request, 'core/productos.html')
+
+def form_producto(request):
+    return render(request, 'core/form_producto.html')
+
+def form_mod_producto(request):
+    return render(request, 'core/form_mod_producto.html')
+
+def form_del_producto(request):
+    return render(request, 'core/form_del_producto.html')
