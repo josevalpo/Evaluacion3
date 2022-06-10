@@ -1,8 +1,9 @@
 from django.urls import path
-from .views import index, bandanas, correas, identificadores, bandana_producto_1, correa_producto_1, identificador_producto_1, registro
+from .views import index, index2, bandanas, correas, identificadores, bandana_producto_1, correa_producto_1, identificador_producto_1, registro
 
 urlpatterns = [
     path('', index, name="index"),
+    path('index.html', index2, name="index2"),
     path('bandanas.html', bandanas, name="bandanas"),
     path('correas.html', correas, name="correas"),
     path('identificadores.html', identificadores, name="identificadores"),
