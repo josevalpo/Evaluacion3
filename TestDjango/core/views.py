@@ -30,3 +30,5 @@ def identificador_producto_1(request):
 def registro(request):
     return render(request, 'core/registro.html')
 
+def productos(request):
+    return render(request, 'core/productos.html')
