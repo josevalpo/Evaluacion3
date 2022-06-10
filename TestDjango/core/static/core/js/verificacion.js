@@ -100,8 +100,8 @@ function validacion() {
         return false;
     }
 
-    else(){
+    else (){
         return true;
     }
 };
-}
+};
