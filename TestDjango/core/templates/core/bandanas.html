@@ -17,7 +17,7 @@
         <div class="row">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-lg">
-                    <a class="navbar-brand" href="Index.html"><b>MI MASCOTA FAVORITA</b></a>
+                    <a class="navbar-brand" href="index.html"><b>MI MASCOTA FAVORITA</b></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -44,11 +44,12 @@
     <!-- Fin barra de navegación -->
 
     <!-- Inicio descripción producto -->
+    {% load static %}
     <div class="container-lg" style="background-color: rgba(191, 228, 29, 0.788);">
         <div class="row mt-2 p-2">
             <!-- Imagen de identificadores para perros  -->
             <div class="col-12 col-md-4">
-                <img src="fotos/bandanas_generico.jpg" class="d-block mw-100" alt="Identificadores">
+                <img src="{% static 'core/img/bandanas_generico.jpg'%}" class="d-block mw-100" alt="Identificadores">
             </div>
             <!-- Contenido Titulo-Codigo-Precio-Promocion-Descripcion-Boton de copmprar-->
             <div class="col-12 col-md-8">

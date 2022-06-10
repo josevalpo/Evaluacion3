@@ -15,3 +15,15 @@ def correas(request):
 def identificadores(request):
     return render(request, 'core/identificadores.html')
 
+def bandana_producto_1(request):
+    return render(request, 'core/bandana_producto_1.html')
+
+def correa_producto_1(request):
+    return render(request, 'core/correa_producto_1.html')
+
+def identificador_producto_1(request):
+    return render(request, 'core/identificador_producto_1.html')
+
+def registro(request):
+    return render(request, 'core/registro.html')
+

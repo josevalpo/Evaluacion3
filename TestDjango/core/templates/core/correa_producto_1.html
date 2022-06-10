@@ -43,11 +43,12 @@
     <!-- Fin barra de navegación -->
 
   <!-- Inicio descripción producto -->
+  {% load static %}
   <div class="container-lg" style="background-color: rgba(191, 228, 29, 0.788);">
     <div class="row mt-2 p-2">
         <!-- Imagen de identificadores para perros  -->
         <div class="col-12 col-md-4">
-            <img src="fotos/correa_1.jpg" class="d-block mw-100" alt="Identificador">
+            <img src="{% static 'core/img/correa_1.jpg'%}" class="d-block mw-100" alt="Identificador">
         </div>
         <!-- Contenido Titulo-Codigo-Precio-Promocion-Descripcion-Boton de copmprar-->
         <div class="col-12 col-md-8">
