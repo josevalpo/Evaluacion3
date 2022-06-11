@@ -1,4 +1,4 @@
-from turtle import home
+# from turtle import home
 from django.shortcuts import render, redirect
 from django.template import loader
 from .models import Producto
@@ -33,15 +33,9 @@ def identificador_producto_1(request):
 def registro(request):
     return render(request, 'core/registro.html')
 
-# def productos(request):
-#     return render(request, 'core/productos.html')
-
 def productos(request):
     datos = {}
     return render(request, 'core/productos.html', datos)
-
-# def form_producto(request):
-#     return render(request, 'core/form_producto.html')
 
 def form_producto(request):
     datos = {
@@ -69,9 +63,6 @@ def form_mod_producto(request, id):
             formulario.save()
             datos['mensaje'] = "Datos modificados correctamente"
     return render(request, 'core/form_mod_producto.html', datos)
-
-# def form_del_producto(request):
-#     return render(request, 'core/form_del_producto.html')
 
 def form_del_producto(request, id):
     producto = Producto.objects.get(sku=id)

@@ -12,7 +12,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="formato.css" />
+    <!-- <link rel="stylesheet" href="static/css/formato.css" /> -->
 
     <title>Mi Mascota Favorita</title>
   </head>
@@ -104,15 +104,15 @@
                 </tr>
               </thead>
                 <tbody>
-                  {% for ve in productos %}
+                  {% for prod in productos %}
                   <tr>
-                    <td>{{ve.sku}}</td>
-                    <td>{{ve.nombre}}</td>
-                    <td>{{ve.precio}}</td>
-                    <td>{{ve.stock}}</td>
-                    <td>{{ve.categoria}}</td>
-                    <td><a href="{% url 'form_mod_producto' ve.sku %}">Modificar</a></td>
-                    <td><a href="{% url 'form_del_producto' ve.sku %}">Eliminar</a></td>
+                    <td>{{prod.sku}}</td>
+                    <td>{{prod.nombre}}</td>
+                    <td>{{prod.precio}}</td>
+                    <td>{{prod.stock}}</td>
+                    <td>{{prod.categoria}}</td>
+                    <td><a href="{% url 'form_mod_producto' prod.sku %}">Modificar</a></td>
+                    <td><a href="{% url 'form_del_producto' prod.sku %}">Eliminar</a></td>
                   </tr>
                   {% endfor %}
                 </tbody>

@@ -11,8 +11,9 @@ urlpatterns = [
     path('correa_producto_1.html', correa_producto_1, name="correa_producto_1"),
     path('identificador_producto_1.html', identificador_producto_1, name="identificador_producto_1"),
     path('registro.html', registro, name="registro"),
+    
     path('productos.html', productos, name="productos"),
     path('form_producto.html', form_producto, name="form_producto"),
-    path('form_mod_producto.html', form_mod_producto, name="form_mod_producto"),
-    path('form_del_producto.html', form_del_producto, name="form_del_producto"),
+    path('form_mod_producto.html/<id>', form_mod_producto, name="form_mod_producto"),
+    path('form_del_producto.html/<id>', form_del_producto, name="form_del_producto"),
 ]
